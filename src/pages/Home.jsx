@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import ecell_logo from "../images/ecell_logo.png";
 import IIC_logo from "../images/IIC_logo.png";
 import bg from "../images/bg.jpg";
@@ -46,12 +47,12 @@ const Home = () => {
         <img
           src={ecell_logo}
           alt="Ecell Logo"
-          className="w-[50px] sm:w-[100px] h-10 sm:h-[70px] p-3 object-cover"
+          className="w-[50px] sm:w-[100px] h-10 sm:h-[70px] md:h-[70px] md:w-[90px] p-2 object-cover"
         />
         <img
           src={IIC_logo}
           alt="IIC Logo"
-          className="w-[70px] sm:w-[200px] h-8 sm:h-[80px] pt-4 object-cover"
+          className="w-[70px] sm:w-[220px] h-8 sm:h-[100px] md:h-[70px] md:w-[120px] pt-4 object-cover"
         />
       </div>
 
@@ -68,6 +69,13 @@ const Home = () => {
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 sm:hidden md:hidden`}
       >
+        <div className="flex justify-end p-4 ">
+          <FontAwesomeIcon
+            icon={faTimes}
+            className="text-white w-[25px] h-[25px] cursor-pointer border border-gray-300 rounded p-1"
+            onClick={toggleSidebar}
+          />
+        </div>
         <div className="md:flex hidden justify-end p-4">
           <FontAwesomeIcon
             icon={faBars}
@@ -161,7 +169,7 @@ const Home = () => {
         </nav>
       </div>
 
-      <nav className="hidden lg:flex justify-center space-x-8 sm:space-x-14 font-normal text-gray-200 text-xl sm:text-xl mb-2 lg:mb-0 z-20">
+      <nav className="hidden md:flex lg:flex justify-center space-x-8 sm:space-x-14 font-normal text-gray-200 text-xl sm:text-xl mb-2 lg:mb-0 z-20">
         <div className="relative group z-21">
           <span className="hover:cursor-pointer hover:text-gray-300">Home</span>
           <div className="absolute left-0 hidden group-hover:flex flex-col bg-gray-800 text-white w-[150px] py-2 rounded-md">
@@ -224,25 +232,25 @@ const Home = () => {
       </nav>
 
       <div className="flex flex-col flex-grow items-center text-center px-4 py-8 z-20">
-        <h1 className="text-gray-100 text-[18px] sm:text-[25px] font-normal transition-opacity duration-1000 ease-in-out mt-8">
+        <h1 className="text-gray-300 text-[18px] sm:text-[25px] font-normal transition-opacity duration-1000 ease-in-out mt-8">
           {phrases[index]}
         </h1>
-        <div className="font-extrabold text-gray-200 text-[28px] sm:text-[55px] leading-[normal] mt-12 sm:mt-4">
+        <div className="font-extrabold text-gray-300 text-[28px] sm:text-[55px] leading-[normal] mt-12 sm:mt-4">
           IIC
         </div>
-        <span className="text-[22px] sm:text-[40px] font-extrabold text-gray-200 mt-4">
+        <span className="text-[22px] sm:text-[40px] font-extrabold text-gray-300 mt-4">
           {" "}
           &amp;
         </span>
-        <div className="font-extrabold text-gray-200 text-[28px] sm:text-[50px] leading-[normal] mt-4 z-30">
+        <div className="font-extrabold text-gray-300 text-[28px] sm:text-[50px] leading-[normal] mt-4 z-30">
           Entrepreneurship Cell
         </div>
-        <div className="text-gray-200 font-extrabold text-[28px] sm:text-[50px] leading-[normal] mt-8 z-30">
+        <div className="text-gray-300 font-extrabold text-[28px] sm:text-[50px] leading-[normal] mt-8 z-30">
           SKNCOE
         </div>
       </div>
 
-      <div className="flex-grow h-full flex items-center justify-center z-20 sm:hidden">
+      <div className="flex-grow h-full flex md:flex items-center justify-center z-20 sm:hidden">
         <Card />
       </div>
     </div>

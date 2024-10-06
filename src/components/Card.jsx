@@ -95,8 +95,8 @@ const Card = () => {
 
 const StyledWrapper = styled.div`
   .parent {
-    width: 290px;
-    height: 300px;
+    width: 270px;
+    height: 280px;
     perspective: 1000px;
   }
 
