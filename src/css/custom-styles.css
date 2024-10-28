@@ -1,0 +1,46 @@
+
+/* Gradient Backgrounds */
+.bg-gradient-midnight-blue-dark-purple {
+    background: linear-gradient(135deg, rgb(14, 8, 20),rgb(0, 0, 0));
+    /* background: linear-gradient(135deg, rgb(75, 73, 73),rgb(0, 0, 0)); */
+  }
+  
+  /* .bg-gradient-deep-blue-electric-purple {
+    background: linear-gradient(135deg, #1A1F36, #5F72BE);
+  }
+   */
+  /* .bg-gradient-dark-slate-steel-blue {
+    background: linear-gradient(135deg, #1C1E25, #2C3E50);
+  }
+   */
+
+  /* .bg-gradient-deep-purple-bright-blue {
+    background: linear-gradient(135deg, #1C1E40, #007BFF);
+  } */
+  
+  /* Shadow Effects */
+  .shadow-soft-glow {
+    box-shadow: 0px 4px 20px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Hover Gradient Shift */
+  .hover-gradient-shift {
+    background: linear-gradient(135deg, #0A0E27, #00B4D8);
+    transition: background 0.3s ease;
+  }
+  
+  .hover-gradient-shift:hover {
+    background: linear-gradient(135deg, #101733, #232a46);
+  }
+  
+  /* Text Glow Effect */
+  .text-glow {
+    text-shadow: 0px 0px 10px rgba(22, 190, 58, 0.925);
+  }
+  
+  /* Centered Text for Small Screens */
+  .center-text {
+    text-align: center;
+  }
+  
+  

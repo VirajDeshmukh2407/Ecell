@@ -2,8 +2,8 @@
 .animated-text {
     display: inline-block;
     position: relative;
-    width: 250px; /* Adjust based on content */
-    height: 30px;  /* Adjust height for proper spacing */
+    width: 250px; 
+    height: 30px;  
     overflow: hidden;
   }
   

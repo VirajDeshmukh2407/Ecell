@@ -1,111 +1,105 @@
-import React from "react";
-
+import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import ecellLogo from "../images/ecell_logo.png";
+import iicLogo from "../images/IIC_logo.png";
 const Navbar = () => {
-  return (
-    <nav className="flex justify-between items-center">
-      <div className="flex items-center">
-        <button
-          id="mega-menu-full-dropdown-button"
-          data-collapse-toggle="mega-menu-full-dropdown"
-          className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded md:w-auto hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
-        >
-          Company{" "}
-          <svg
-            className="w-2.5 h-2.5 ms-2.5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 10 6"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="m1 1 4 4 4-4"
-            />
-          </svg>
-        </button>
-      </div>
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState("");
 
-      <div
-        id="mega-menu-full-dropdown"
-        className="mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600"
-      >
-        <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6">
-          <ul>
-            <li>
-              <a
-                href="#"
-                className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <div className="font-semibold">Online Stores</div>
-                <span className="text-sm text-gray-500 dark:text-gray-400">
-                  Connect with third-party tools that you're already using.
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <div className="font-semibold">Segmentation</div>
-                <span className="text-sm text-gray-500 dark:text-gray-400">
-                  Connect with third-party tools that you're already using.
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <div className="font-semibold">Marketing CRM</div>
-                <span className="text-sm text-gray-500 dark:text-gray-400">
-                  Connect with third-party tools that you're already using.
-                </span>
-              </a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a
-                href="#"
-                className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <div className="font-semibold">Online Stores</div>
-                <span className="text-sm text-gray-500 dark:text-gray-400">
-                  Connect with third-party tools that you're already using.
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <div className="font-semibold">Segmentation</div>
-                <span className="text-sm text-gray-500 dark:text-gray-400">
-                  Connect with third-party tools that you're already using.
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <div className="font-semibold">Marketing CRM</div>
-                <span className="text-sm text-gray-500 dark:text-gray-400">
-                  Connect with third-party tools that you're already using.
-                </span>
-              </a>
-            </li>
-          </ul>
+  const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
+  return (
+    <div className="z-30 bg-opacity-90 text-gray-200">
+      <header className=" w-full flex justify-between items-center p-4 z-50">
+        {/* Left logo */}
+        <img
+          src={ecellLogo}
+          alt="Ecell Logo"
+          className="w-12 h-auto sm:w-[90px] sm:h-auto object-cover"
+        />
+
+        {/* Right logo */}
+        <div className="flex flex-col items-center">
+          <img
+            src={iicLogo}
+            alt="IIC Logo"
+            className="w-14 h-auto sm:w-[120px] sm:h-auto object-cover"
+          />
+
+          {/* Sidebar button (only on small screens) */}
+          <div className="sm:hidden mt-4">
+            <FontAwesomeIcon
+              icon={faBars}
+              className="text-gray-200 w-6 h-6 cursor-pointer"
+              onClick={toggleSidebar}
+            />
+          </div>
         </div>
-      </div>
-    </nav>
+      </header>
+
+      {/* Sidebar or Dropdown menu for Desktop */}
+      <nav className="hidden md:flex justify-center space-x-8 text-lg font-normal">
+        <div className="relative group">
+          <span className="hover:text-gray-300">Home</span>
+          <div className="absolute left-0 hidden group-hover:flex flex-col bg-gray-800 text-white w-[150px] py-2 rounded-md">
+            <a href="#" className="hover:bg-gray-600 py-1 px-4">
+              Sublink 1
+            </a>
+            <a href="#" className="hover:bg-gray-600 py-1 px-4">
+              Sublink 2
+            </a>
+            <a href="#" className="hover:bg-gray-600 py-1 px-4">
+              Sublink 3
+            </a>
+          </div>
+        </div>
+
+        <div className="relative group z-21">
+          <span className="hover:cursor-pointer hover:text-gray-300">
+            About
+          </span>
+          <div className="absolute left-0 hidden group-hover:flex flex-col bg-gray-800 text-white w-[180px] py-2 rounded-md">
+            <a href="#" className="hover:bg-gray-600 py-4 px-4">
+              Sublink A
+            </a>
+            <a href="#" className="hover:bg-gray-600 py-4 px-4">
+              Sublink B
+            </a>
+            <a href="#" className="hover:bg-gray-600 py-4 px-4">
+              Sublink C
+            </a>
+          </div>
+        </div>
+
+        <div className="relative group ">
+          <span className="hover:cursor-pointer hover:text-gray-300">
+            Events
+          </span>
+          <div className="absolute left-0 hidden group-hover:flex flex-col bg-gray-800 text-white w-[180px] py-2 rounded-md z-21">
+            <a href="#" className="hover:bg-gray-600 py-4 px-4">
+              Event 1
+            </a>
+            <a href="#" className="hover:bg-gray-600 py-4 px-4">
+              Event 2
+            </a>
+          </div>
+        </div>
+
+        <div className="relative group ">
+          <span className="hover:cursor-pointer hover:text-gray-300">
+            Contact
+          </span>
+          <div className="absolute left-0 hidden group-hover:flex flex-col bg-gray-800 text-white w-[150px] py-2 rounded-md z-21">
+            <a href="#" className="hover:bg-gray-600 py-1 px-4">
+              Email Us
+            </a>
+            <a href="#" className="hover:bg-gray-600 py-1 px-4">
+              Call Us
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
   );
 };
 
