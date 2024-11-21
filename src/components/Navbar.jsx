@@ -1,106 +1,74 @@
+"use client";
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import ecellLogo from "../images/ecell_logo.png";
-import iicLogo from "../images/IIC_logo.png";
-const Navbar = () => {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState("");
+import { HoveredLink, Menu, MenuItem, ProductItem } from "./navbar-menu";
+import { cn } from "../lib/utils";
 
-  const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
+function Navbar({ className }) {
+  const [active, setActive] = useState(null);
   return (
-    <div className="z-30 bg-opacity-90 text-gray-200">
-      <header className=" w-full flex justify-between items-center p-4 z-50">
-        {/* Left logo */}
-        <img
-          src={ecellLogo}
-          alt="Ecell Logo"
-          className="w-12 h-auto sm:w-[90px] sm:h-auto object-cover"
-        />
-
-        {/* Right logo */}
-        <div className="flex flex-col items-center">
-          <img
-            src={iicLogo}
-            alt="IIC Logo"
-            className="w-14 h-auto sm:w-[120px] sm:h-auto object-cover"
-          />
-
-          {/* Sidebar button (only on small screens) */}
-          <div className="sm:hidden mt-4">
-            <FontAwesomeIcon
-              icon={faBars}
-              className="text-gray-200 w-6 h-6 cursor-pointer"
-              onClick={toggleSidebar}
+    <div
+      className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
+    >
+      <Menu setActive={setActive} className="text-white hover:text-yellow-600">
+        <MenuItem setActive={setActive} item="Home">
+          {/* <div className="flex flex-col space-y-4 text-sm">
+            <HoveredLink href="/web-dev">Web Development</HoveredLink>
+            <HoveredLink href="/interface-design">Interface Design</HoveredLink>
+            <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
+            <HoveredLink href="/branding">Branding</HoveredLink>
+          </div> */}
+        </MenuItem>
+        <MenuItem
+          setActive={setActive}
+          item="About"
+          className="hover:text-yellow-500"
+        >
+          {/* <div className="flex flex-col space-y-4 text-sm">
+            <HoveredLink href="/web-dev">Web Development</HoveredLink>
+            <HoveredLink href="/interface-design">Interface Design</HoveredLink>
+            <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
+            <HoveredLink href="/branding">Branding</HoveredLink>
+          </div> */}
+        </MenuItem>
+        <MenuItem setActive={setActive} active={active} item="Events">
+          <div className="  text-sm grid grid-cols-2 gap-10 p-4">
+            <ProductItem
+              title="Algochurn"
+              href="https://algochurn.com"
+              src="https://assets.aceternity.com/demos/algochurn.webp"
+              description="Prepare for tech interviews like never before."
+            />
+            <ProductItem
+              title="Tailwind Master Kit"
+              href="https://tailwindmasterkit.com"
+              src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
+              description="Production ready Tailwind css components for your next project"
+            />
+            <ProductItem
+              title="Moonbeam"
+              href="https://gomoonbeam.com"
+              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
+              description="Never write from scratch again. Go from idea to blog in minutes."
+            />
+            <ProductItem
+              title="Rogue"
+              href="https://userogue.com"
+              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
           </div>
-        </div>
-      </header>
-
-      {/* Sidebar or Dropdown menu for Desktop */}
-      <nav className="hidden md:flex justify-center space-x-8 text-lg font-normal">
-        <div className="relative group">
-          <span className="hover:text-gray-300">Home</span>
-          <div className="absolute left-0 hidden group-hover:flex flex-col bg-gray-800 text-white w-[150px] py-2 rounded-md">
-            <a href="#" className="hover:bg-gray-600 py-1 px-4">
-              Sublink 1
-            </a>
-            <a href="#" className="hover:bg-gray-600 py-1 px-4">
-              Sublink 2
-            </a>
-            <a href="#" className="hover:bg-gray-600 py-1 px-4">
-              Sublink 3
-            </a>
-          </div>
-        </div>
-
-        <div className="relative group z-21">
-          <span className="hover:cursor-pointer hover:text-gray-300">
-            About
-          </span>
-          <div className="absolute left-0 hidden group-hover:flex flex-col bg-gray-800 text-white w-[180px] py-2 rounded-md">
-            <a href="#" className="hover:bg-gray-600 py-4 px-4">
-              Sublink A
-            </a>
-            <a href="#" className="hover:bg-gray-600 py-4 px-4">
-              Sublink B
-            </a>
-            <a href="#" className="hover:bg-gray-600 py-4 px-4">
-              Sublink C
-            </a>
-          </div>
-        </div>
-
-        <div className="relative group ">
-          <span className="hover:cursor-pointer hover:text-gray-300">
-            Events
-          </span>
-          <div className="absolute left-0 hidden group-hover:flex flex-col bg-gray-800 text-white w-[180px] py-2 rounded-md z-21">
-            <a href="#" className="hover:bg-gray-600 py-4 px-4">
-              Event 1
-            </a>
-            <a href="#" className="hover:bg-gray-600 py-4 px-4">
-              Event 2
-            </a>
-          </div>
-        </div>
-
-        <div className="relative group ">
-          <span className="hover:cursor-pointer hover:text-gray-300">
-            Contact
-          </span>
-          <div className="absolute left-0 hidden group-hover:flex flex-col bg-gray-800 text-white w-[150px] py-2 rounded-md z-21">
-            <a href="#" className="hover:bg-gray-600 py-1 px-4">
-              Email Us
-            </a>
-            <a href="#" className="hover:bg-gray-600 py-1 px-4">
-              Call Us
-            </a>
-          </div>
-        </div>
-      </nav>
+        </MenuItem>
+        <MenuItem setActive={setActive} item="Contact Us">
+          {/* <div className="flex flex-col space-y-4 text-sm">
+            <HoveredLink href="/hobby">Hobby</HoveredLink>
+            <HoveredLink href="/individual">Individual</HoveredLink>
+            <HoveredLink href="/team">Team</HoveredLink>
+            <HoveredLink href="/enterprise">Enterprise</HoveredLink>
+          </div> */}
+        </MenuItem>
+      </Menu>
     </div>
   );
-};
+}
 
 export default Navbar;
