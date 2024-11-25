@@ -3,6 +3,7 @@ import bg from "../images/bg.jpg";
 import Navbar from "../components/Navbar";
 import { FaBars } from "react-icons/fa";
 import ScrollButton from "../components/ScrollButton";
+import FloatingSidebar from "../components/FloatingSidebar";
 
 function HomePage() {
   const phrases = ["DREAM.", "DREAM. DISCOVER.", "DREAM. DISCOVER. DISRUPT."];
@@ -57,24 +58,25 @@ function HomePage() {
 
       {/* Content Container */}
       <div className="flex flex-col flex-grow items-center text-center px-4 py-8 z-20 mt-12">
-        <h1 className="text-gray-300 text-[18px] sm:text-[25px] font-normal transition-opacity duration-1000 ease-in-out mt-10">
+        <h1 className="text-gray-300 text-[18px] sm:text-[25px] font-normal transition-opacity duration-1000 ease-in-out mt-10 poppins-semibold">
           {phrases[index]}
         </h1>
-        <div className="font-extrabold text-gray-300 text-[28px] sm:text-[55px] leading-[normal] mt-16 sm:mt-4">
+        <div className="font-extrabold text-gray-300 text-[28px] sm:text-[55px] leading-[normal] mt-16 sm:mt-4 poppins-bold">
           IIC
         </div>
-        <span className="text-[22px] sm:text-[40px] font-extrabold text-gray-300 mt-6">
+        <span className="text-[22px] sm:text-[40px] font-extrabold text-gray-300 mt-6 poppins-bold">
           {" "}
           &amp;
         </span>
-        <div className="font-extrabold text-gray-300 text-[28px] sm:text-[50px] leading-[normal] mt-4 z-30">
+        <div className="font-extrabold text-gray-300 text-[28px] sm:text-[50px] leading-[normal] mt-4 z-30 poppins-bold">
           Entrepreneurship Cell
         </div>
-        <div className="text-gray-300 font-extrabold text-[28px] sm:text-[50px] leading-[normal] mt-10 z-30">
+        <div className="text-gray-300 font-extrabold text-[28px] sm:text-[50px] leading-[normal] mt-10 z-30 poppins-bold">
           SKNCOE
         </div>
       </div>
 
+      <FloatingSidebar/>
       <ScrollButton />
     </div>
   );
