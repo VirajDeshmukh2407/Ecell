@@ -1,42 +1,39 @@
-// import ThreeDCardDemo from "../components/ThreeDCard";
-import { Card, CardContent, CardHeader } from "acertainity-ui";
+import React from "react";
+import { ThreeDCardDemo } from "../sub-pages/Event-card";
+import { title } from "framer-motion/client";
 
 const Events = () => {
-    const eventsData = [
-      {
-        title: "E-Conclave",
-        description:
-          "A flagship event that brings together entrepreneurs, investors, and leaders to share their experiences and insights.",
-      },
-      {
-        title: "Aarambh",
-        description:
-          "The beginning of a journey for aspiring entrepreneurs, packed with workshops and mentorship sessions.",
-      },
-      {
-        title: "Startup Sutra",
-        description:
-          "A comprehensive event focused on pitching, networking, and learning for budding startups.",
-      },
-    ];
+  const eventsData = [
+    {
+      title: "E-Conclave",
+      description:
+        "flagship event that brings together industry leaders, successful entrepreneurs, and innovators for insightful panel discussions, keynote speeches, and interactive sessions.",
+    },
+    {
+      title: "Aarambh",
+      description:
+        "A dedicated event to ignite the entrepreneurial journey of students by providing a platform to ideate, innovate, and collaborate.",
+    },
+    {
+      title: "Startup Sutra",
+      description:
+        "An interactive event that combines fun, competition, and education, offering a unique entrepreneurial experience.",
+    },
+  ];
 
-    return(
-        <div className="events-container">
-        <h1 className="events-heading">What We Do?</h1>
-        <h2 className="events-subheading">Events</h2>
-  
-        <div className="cards-container">
-          {eventsData.map((event, index) => (
-            <Card key={index} className="event-card">
-              <CardHeader title={event.title} />
-              <CardContent>
-                <p>{event.description}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+  return (
+    <div className="events-container bg-black min-h-screen py-10">
+      <h1 className="text-white text-4xl font-bold text-center mb-6">What We Do?</h1>
+      <h2 className="text-gray-300 text-2xl text-center mb-8">Events</h2>
+
+      {/* Render each event dynamically using ThreeDCardDemo */}
+      <div className="cards-container flex justify-center gap-6">
+        {eventsData.map((event, index) => (
+          <ThreeDCardDemo key={index} event={event} />
+        ))}
       </div>
-    );
-}
+    </div>
+  );
+};
 
 export default Events;
