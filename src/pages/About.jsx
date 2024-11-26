@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { BackgroundBeams } from "../components/BackgroundBeams.jsx";
+import CardSpotlight from "../components/Card-Spotlight";
 import about_us from "../images/about_us.png";
 import AboutEcell from "../sub-pages/About-Ecell.jsx";
 export default function About() {
@@ -44,7 +45,7 @@ export default function About() {
         <div className="relative z-10 lg:w-1/2 mt-6 lg:mt-0 flex justify-center lg:justify-end">
           <img
             src={about_us}
-            alt="E-Cell IIC"
+            alt="E-Cell IIC Logo"
             className="w-3/4 lg:w-200 rounded-lg"
           />
         </div>

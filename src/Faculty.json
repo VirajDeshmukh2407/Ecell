@@ -1,0 +1,26 @@
+[
+    {
+      "name": "Dr. Punam Raskar",
+      "department": "Coordinator",
+      "image": "https://example.com/images/ajinkya.jpg",
+      "email": "yashbaheti23@gmail.com"
+    },
+    {
+      "name": "Dr. Poonam Railkar",
+      "department": "Computer",
+      "image": "https://example.com/images/ajinkya.jpg",
+      "email": "yashbaheti23@gmail.com"
+    },
+    {
+      "name": "Prof. Saraswati Nagtilak",
+      "department": "Information Technology",
+      "image": "https://example.com/images/ajinkya.jpg",
+      "email": "yashbaheti23@gmail.com"
+    },
+    {
+      "name": "Dr. Sanket Charkha",
+      "department": "Management",
+      "image": "https://example.com/images/ajinkya.jpg",
+      "email": "yashbaheti23@gmail.com"
+    }
+]

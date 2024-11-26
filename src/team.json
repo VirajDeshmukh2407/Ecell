@@ -1,0 +1,143 @@
+[
+    {
+      "name": "Yash Baheti",
+      "position": "President",
+      "image": "https://example.com/images/ajinkya.jpg",
+      "email": "yashbaheti23@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/yash-baheti-97548a243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      "name": "Shubham Sharma",
+      "position": "Vice President",
+      "image": "https://example.com/images/riya.jpg",
+      "email": "ishubhamsharmac@gmail.com",
+      "linkedin": " https://www.linkedin.com/in/shubham-kumar-b15769279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+    },
+    {
+      "name": "Rohit Vaidya",
+      "position": "General Secretary",
+      "image": "https://example.com/images/rahul.jpg",
+      "email": "rohitvaidya50085@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/rohit-vaidya-81ab12254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+    },
+    {
+      "name": "Tanishq Shroff",
+      "position": "PR Head",
+      "image": "https://example.com/images/sneha.jpg",
+      "email": "tanishqshroff75@gmail.com",
+      "linkedin": "www.linkedin.com/in/tanishqshroff"
+    },
+    {
+      "name": "Shruti Bagbande",
+      "position": "PR Head",
+      "image": "https://example.com/images/aman.jpg",
+      "email": "shrutibagbande361@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/shruti-bagbande-424b11253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      "name": "Siddharth Singh",
+      "position": "PR Head",
+      "image": "https://example.com/images/aman.jpg",
+      "email": "siddharthsingh25082003@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/siddharth-singh-a13296261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      "name": "Yashwant Jichkar",
+      "position": "PR Head",
+      "image": "https://example.com/images/aman.jpg",
+      "email": "jichkaryashwant@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/yashwant-jichkar-79b516272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      "name": "Makarand Bhambure",
+      "position": "PR Head",
+      "image": "https://example.com/images/aman.jpg",
+      "email": "mak.abhambure@gmail.com",
+      "linkedin": " https://www.linkedin.com/in/makarand-bhambure-aa1446243"
+    },
+    {
+      "name": "Ajinkya Gavali",
+      "position": "Technical Head",
+      "image": "https://example.com/images/aman.jpg",
+      "email": "ajinkyagavali4@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/ajinkya-gavali-48ab29249/"
+    },
+    {
+      "name": "Viraj Deshmukh",
+      "position": "Technical Head",
+      "image": "https://example.com/images/aman.jpg",
+      "email": "viraj.work24@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/viraj-deshmukh-513352292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      "name": "Adiya Mane",
+      "position": "Sponsorship Head",
+      "image": "https://example.com/images/aman.jpg",
+      "email": "adityamane1402@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/aditya-nitin-mane-63918629b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      "name": "Sanjana Sapar",
+      "position": "Sponsorship Head",
+      "image": "https://example.com/images/aman.jpg",
+      "email": " sanjanasapar@gmail.com ",
+      "linkedin": " https://www.linkedin.com/in/sanjana-sapar-b8b1392a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      "name": "Om Deshmukh",
+      "position": "Sponsorship Head",
+      "image": "https://example.com/images/aman.jpg",
+      "email": "omdeshmukh598@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/om-deshmukh-n431122?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      "name": "Abhinav Boge",
+      "position": "Social Media Head",
+      "image": "https://example.com/images/aman.jpg",
+      "email": "abhinavboge200@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/abhinav-boge-390b3425b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      "name": "Ram Burange",
+      "position": "Social Media Head",
+      "image": "https://example.com/images/aman.jpg",
+      "email": "ramburange46@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/ram-burange-55b6b2252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      "name": "Tejas Ahire",
+      "position": "Social Media Head",
+      "image": "https://example.com/images/aman.jpg",
+      "email": "aman.gupta@example.com",
+      "linkedin": "https://www.linkedin.com/in/aman-gupta"
+    },
+    {
+      "name": "Yashashree Chavan",
+      "position": "Creative Head",
+      "image": "https://example.com/images/aman.jpg",
+      "email": "yashshreechavan77@gmail.com",
+      "linkedin": " https://www.linkedin.com/in/yashashree-chavan-010204258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      "name": "Swanand Konke",
+      "position": "Finance Head",
+      "image": "https://example.com/images/aman.jpg",
+      "email": "swanandkonke@gmail.com",
+      "linkedin": " https://www.linkedin.com/in/swanand-konke-149486258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      "name": "Anushree Sawant",
+      "position": "Documentation Head",
+      "image": "https://example.com/images/aman.jpg",
+      "email": "anushrisawant526@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/anushree-sawant-a94b0827b"
+    },
+    {
+      "name": "Ramraje Patil",
+      "position": "Documentation Head",
+      "image": "https://example.com/images/aman.jpg",
+      "email": "patilramraje27@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/ramrajepatil?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    }
+  ]
+  
