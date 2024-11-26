@@ -8,7 +8,7 @@ export default function About() {
 
   const handleClick = (e) => {
     e.preventDefault();
-    navigate("/about-ecell");
+    window.open("/about-ecell", "_blank");
   };
 
   // const handleClick = (e) => {
