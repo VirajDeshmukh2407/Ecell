@@ -1,6 +1,6 @@
 import React from "react";
 import { ThreeDCardDemo } from "../sub-pages/Event-card";
-
+import EConclavePage from "../sub-pages/EConclave";
 const Events = () => {
   const eventsData = [
     {
@@ -77,10 +77,12 @@ export default Events;
 //       </h1>
 //       <h2 className="text-gray-300 text-2xl text-center mb-8">Events</h2>
 
-//       {/* Responsive Grid Layout */}
-//       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 px-6">
+//       {/* Responsive Flex Layout */}
+//       <div className="flex flex-col md:flex-row md:justify-center md:gap-6 px-4">
 //         {eventsData.map((event, index) => (
-//           <ThreeDCardDemo key={index} event={event} />
+//           <div key={index} className="mb-6 md:mb-0">
+//             <ThreeDCardDemo event={event} />
+//           </div>
 //         ))}
 //       </div>
 //     </div>

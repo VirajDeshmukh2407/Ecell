@@ -3,7 +3,12 @@ import Navbar from "../components/Navbar";
 import { FaBars } from "react-icons/fa";
 import ScrollButton from "../components/ScrollButton";
 import FloatingSidebar from "../components/FloatingSidebar";
-
+import About from "../pages/About";
+import Events from "./Events";
+import CoreTeam from "./Team";
+import Faculty from "./Faculty";
+import Contact from "./Contact";
+import Footer from "./Footer";
 function HomePage() {
   const phrases = ["DREAM.", "DREAM. DISCOVER.", "DREAM. DISCOVER. DISRUPT."];
   const [index, setIndex] = useState(0);
@@ -18,65 +23,73 @@ function HomePage() {
   }, []);
 
   return (
-    <div
-      className="relative flex flex-col h-screen bg-cover bg-center"
-      style={{ backgroundImage: `url(${"images/bg.jpg"})` }}
-    >
-      {/* Navbar for medium and larger screens */}
-      <div className="hidden md:block">
-        <Navbar />
-      </div>
+    <div>
+      <div
+        className="relative flex flex-col h-screen bg-cover bg-center"
+        style={{ backgroundImage: `url(${"images/bg.jpg"})` }}
+      >
+        {/* Navbar for medium and larger screens */}
+        <div className="hidden md:block">
+          <Navbar />
+        </div>
 
-      {/* Sidebar icon for small screens */}
-      <div className="absolute top-4 left-4 md:hidden z-30">
-        <FaBars
-          className="text-white text-2xl cursor-pointer"
-          onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-        />
-      </div>
+        {/* Sidebar icon for small screens */}
+        <div className="absolute top-4 left-4 md:hidden z-30">
+          <FaBars
+            className="text-white text-2xl cursor-pointer"
+            onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+          />
+        </div>
 
-      {/* Sidebar content for small screens */}
-      {isSidebarOpen && (
-        <div className="absolute top-0 left-0 w-3/4 h-full bg-gray-800 bg-opacity-90 p-6 z-40">
-          <button
-            className="text-white mb-4"
-            onClick={() => setIsSidebarOpen(false)}
-          >
-            Close
-          </button>
-          <div className="text-white space-y-4">
-            <p>Menu Item 1</p>
-            <p>Menu Item 2</p>
-            <p>Menu Item 3</p>
+        {/* Sidebar content for small screens */}
+        {isSidebarOpen && (
+          <div className="absolute top-0 left-0 w-3/4 h-full bg-gray-800 bg-opacity-90 p-6 z-40">
+            <button
+              className="text-white mb-4"
+              onClick={() => setIsSidebarOpen(false)}
+            >
+              Close
+            </button>
+            <div className="text-white space-y-4">
+              <p>Menu Item 1</p>
+              <p>Menu Item 2</p>
+              <p>Menu Item 3</p>
+            </div>
+          </div>
+        )}
+
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black opacity-40 z-10"></div>
+
+        {/* Content Container */}
+        <div className="flex flex-col flex-grow items-center text-center px-4 py-8 z-20 mt-12">
+          <h1 className="text-gray-300 text-[18px] sm:text-[25px] font-normal transition-opacity duration-1000 ease-in-out mt-10 poppins-semibold">
+            {phrases[index]}
+          </h1>
+          <div className="font-extrabold text-gray-300 text-[28px] sm:text-[55px] leading-[normal] mt-16 sm:mt-4 poppins-bold">
+            IIC
+          </div>
+          <span className="text-[22px] sm:text-[40px] font-extrabold text-gray-300 mt-6 poppins-bold">
+            {" "}
+            &amp;
+          </span>
+          <div className="font-extrabold text-gray-300 text-[28px] sm:text-[50px] leading-[normal] mt-4 z-30 poppins-bold">
+            Entrepreneurship Cell
+          </div>
+          <div className="text-gray-300 font-extrabold text-[28px] sm:text-[50px] leading-[normal] mt-10 z-30 poppins-bold">
+            SKNCOE
           </div>
         </div>
-      )}
 
-      {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-black opacity-40 z-10"></div>
-
-      {/* Content Container */}
-      <div className="flex flex-col flex-grow items-center text-center px-4 py-8 z-20 mt-12">
-        <h1 className="text-gray-300 text-[18px] sm:text-[25px] font-normal transition-opacity duration-1000 ease-in-out mt-10 poppins-semibold">
-          {phrases[index]}
-        </h1>
-        <div className="font-extrabold text-gray-300 text-[28px] sm:text-[55px] leading-[normal] mt-16 sm:mt-4 poppins-bold">
-          IIC
-        </div>
-        <span className="text-[22px] sm:text-[40px] font-extrabold text-gray-300 mt-6 poppins-bold">
-          {" "}
-          &amp;
-        </span>
-        <div className="font-extrabold text-gray-300 text-[28px] sm:text-[50px] leading-[normal] mt-4 z-30 poppins-bold">
-          Entrepreneurship Cell
-        </div>
-        <div className="text-gray-300 font-extrabold text-[28px] sm:text-[50px] leading-[normal] mt-10 z-30 poppins-bold">
-          SKNCOE
-        </div>
+        <FloatingSidebar />
+        <ScrollButton />
       </div>
-
-      <FloatingSidebar/>
-      <ScrollButton />
+      <About></About>
+      <Events></Events>
+      <CoreTeam></CoreTeam>
+      <Faculty></Faculty>
+      <Contact></Contact>
+      <Footer></Footer>
     </div>
   );
 }

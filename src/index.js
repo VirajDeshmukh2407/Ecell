@@ -1,15 +1,36 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import {
+  BrowserRouter,
+  createBrowserRouter,
+  Router,
+  RouterProvider,
+} from "react-router-dom";
 import "./index.css";
 import App from "./App";
-
+import HomePage from "./pages/Home";
+import EConclavePage from "./sub-pages/EConclave";
+import AboutEcell from "./sub-pages/About-Ecell";
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomePage />,
+  },
+  {
+    path: "/econclave",
+    element: <EConclavePage />,
+  },
+  {
+    path: "/whatwedo",
+    element: <AboutEcell />,
+  },
+]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <RouterProvider router={appRouter}>
       <App />
-    </BrowserRouter>
+    </RouterProvider>
   </React.StrictMode>
 );
 
