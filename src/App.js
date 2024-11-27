@@ -6,6 +6,8 @@ import AboutEcell from "./sub-pages/About-Ecell";
 import Events from "./pages/Events";
 import CoreTeam from "./pages/Team";
 import Faculty from "./pages/Faculty";
+import Contact from "./pages/Contact";
+import Footer from "./pages/Footer";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <Events/>
       <CoreTeam/>
       <Faculty/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }

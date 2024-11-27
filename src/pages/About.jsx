@@ -44,7 +44,7 @@ export default function About() {
         {/* Image Section */}
         <div className="relative z-10 lg:w-1/2 mt-6 lg:mt-0 flex justify-center lg:justify-end">
           <img
-            src={about_us}
+            src="./images/IIC Ecell_transparent logo.png"
             alt="E-Cell IIC Logo"
             className="w-3/4 lg:w-200 rounded-lg"
           />
