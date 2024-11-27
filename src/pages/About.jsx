@@ -40,7 +40,7 @@ export default function About() {
             Learn More About E-CELL IIC
           </button>
         </div>
-
+        <BackgroundBeams />
         {/* Image Section */}
         <div className="relative z-10 lg:w-1/2 mt-6 lg:mt-0 flex justify-center lg:justify-end">
           <img
