@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import bg from "../images/bg.jpg";
 import Navbar from "../components/Navbar";
 import { FaBars } from "react-icons/fa";
 import ScrollButton from "../components/ScrollButton";
@@ -21,7 +20,7 @@ function HomePage() {
   return (
     <div
       className="relative flex flex-col h-screen bg-cover bg-center"
-      style={{ backgroundImage: `url(${bg})` }}
+      style={{ backgroundImage: `url(${"images/bg.jpg"})` }}
     >
       {/* Navbar for medium and larger screens */}
       <div className="hidden md:block">
