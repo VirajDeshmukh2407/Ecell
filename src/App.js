@@ -8,6 +8,7 @@ import Faculty from "./pages/Faculty";
 import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
 import EConclavePage from "./sub-pages/EConclave";
+import Alumini from "./pages/Alumini";
 function App() {
   return (
     <div>
@@ -16,6 +17,7 @@ function App() {
       <Events />
       <CoreTeam />
       <Faculty />
+      <Alumini/>
       <Contact />
       <Footer />
     </div>

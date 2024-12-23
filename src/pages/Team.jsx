@@ -7,7 +7,7 @@ const CoreTeam = () => {
     <section className="py-16 bg-black">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center text-white mb-12">
-          Meet The Core Team
+          Meet The <span className="text-yellow-400">Core Team</span>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {teamData.map((member, index) => (

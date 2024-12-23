@@ -18,6 +18,7 @@ function Navbar({ className }) {
             className=" hover:text-yellow-600"
           ></MenuItem>
         </Link>
+
         <MenuItem
           setActive={setActive}
           item="About"

@@ -11,6 +11,7 @@ import App from "./App";
 import HomePage from "./pages/Home";
 import EConclavePage from "./sub-pages/EConclave";
 import AboutEcell from "./sub-pages/About-Ecell";
+import About from "./pages/About";
 const appRouter = createBrowserRouter([
   {
     path: "/",
