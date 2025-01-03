@@ -17,7 +17,7 @@ function App() {
       <Events />
       <CoreTeam />
       <Faculty />
-      <Alumini/>
+      <Alumini />
       <Contact />
       <Footer />
     </div>

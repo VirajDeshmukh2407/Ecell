@@ -8,6 +8,7 @@ export default function About() {
       <div className="relative overflow-hidden p-12 flex flex-col lg:flex-row items-center lg:items-start lg:justify-between">
         <div
           className="relative z-10 lg:w-1/2 text-center lg:text-left"
+          id="about"
         >
           <h1 className="text-3xl lg:text-4xl font-bold mb-6 text-glow text-gray-300">
             Who Are We?

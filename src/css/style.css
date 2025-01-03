@@ -1,0 +1,29 @@
+@keyframes spin-border {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinning-border-container {
+  position: relative;
+  padding: 2rem; /* Adjust padding for inner content */
+  background: rgba(0, 0, 0, 0.8); /* Background for the content */
+  border-radius: 10px; /* Optional for rounded borders */
+  overflow: hidden;
+}
+
+.spinning-border-container::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 3px solid white; /* Pure white border */
+  border-radius: 10px; /* Matches the container's border-radius */
+  animation: spin-border 3s linear infinite; /* Smooth spinning animation */
+  z-index: -1; /* Places the spinning border behind the content */
+}

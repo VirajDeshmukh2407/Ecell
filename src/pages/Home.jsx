@@ -10,6 +10,7 @@ import Faculty from "./Faculty";
 import Contact from "./Contact";
 import Alumini from "./Alumini";
 import Footer from "./Footer";
+import AboutEcell from "../sub-pages/About-Ecell";
 function HomePage() {
   const phrases = ["DREAM.", "DREAM. DISCOVER.", "DREAM. DISCOVER. DISRUPT."];
   const [index, setIndex] = useState(0);
@@ -86,10 +87,11 @@ function HomePage() {
         <ScrollButton />
       </div>
       <About></About>
+      <AboutEcell></AboutEcell>
       <Events></Events>
       <Alumini></Alumini>
-      <CoreTeam></CoreTeam>
-      <Faculty></Faculty>
+      {/* <CoreTeam></CoreTeam>
+      <Faculty></Faculty> */}
       <Contact></Contact>
       <Footer></Footer>
     </div>

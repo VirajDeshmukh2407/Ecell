@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./navbar-menu";
 import { cn } from "../lib/utils";
 import { Link } from "react-router-dom";
-// import { useNavigate } from "react-router";
 function Navbar({ className }) {
   const [active, setActive] = useState(null);
 
   return (
     <div
-      className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
+      className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 ", className)}
     >
       <Menu setActive={setActive} className="text-white">
         <Link to="/">
@@ -19,11 +18,15 @@ function Navbar({ className }) {
           ></MenuItem>
         </Link>
 
-        <MenuItem
+        {/* <MenuItem
           setActive={setActive}
           item="About"
           className="hover:text-yellow-500"
-        ></MenuItem>
+        ></MenuItem> */}
+        <a href="#about" className="text-white hover:text-yellow-600">
+          About
+        </a>
+
         <MenuItem setActive={setActive} active={active} item="Events">
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
             <Link to="/econclave">
@@ -55,14 +58,19 @@ function Navbar({ className }) {
             /> */}
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} item="Contact Us">
-          {/* <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Hobby</HoveredLink>
-            <HoveredLink href="/individual">Individual</HoveredLink>
-            <HoveredLink href="/team">Team</HoveredLink>
-            <HoveredLink href="/enterprise">Enterprise</HoveredLink>
-          </div> */}
-        </MenuItem>
+        <Link to="/team">
+          <MenuItem
+            setActive={setActive}
+            item="Team"
+            className=" hover:text-yellow-600"
+          ></MenuItem>
+        </Link>
+        <Link to="/contacts">
+          <MenuItem setActive={setActive}
+            item="Contact"
+            className=" hover:text-yellow-600">
+          </MenuItem>
+        </Link>
       </Menu>
     </div>
   );

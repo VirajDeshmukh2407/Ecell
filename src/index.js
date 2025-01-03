@@ -10,8 +10,10 @@ import "./index.css";
 import App from "./App";
 import HomePage from "./pages/Home";
 import EConclavePage from "./sub-pages/EConclave";
-import AboutEcell from "./sub-pages/About-Ecell";
+// import AboutEcell from "./sub-pages/About-Ecell";
 import About from "./pages/About";
+import CoreTeam from "./pages/Team";
+import ContactUs from "./pages/ContactUs";
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -22,8 +24,12 @@ const appRouter = createBrowserRouter([
     element: <EConclavePage />,
   },
   {
-    path: "/whatwedo",
-    element: <AboutEcell />,
+    path: "/team",
+    element: <CoreTeam />,
+  },
+  {
+    path: "/contacts",
+    element: <ContactUs />,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
