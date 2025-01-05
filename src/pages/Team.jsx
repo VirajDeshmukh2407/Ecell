@@ -10,7 +10,7 @@ import Navbar from "../components/Navbar";
 const CoreTeam = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1500,
+      duration: 2500,
       once: false,
     });
   }, []);

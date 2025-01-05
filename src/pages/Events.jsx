@@ -6,7 +6,7 @@ const Events = () => {
     {
       title: "E-Conclave",
       description:
-        "flagship event that brings together industry leaders, successful entrepreneurs, and innovators for insightful panel discussions, keynote speeches, and interactive sessions.",
+        "Flagship event that brings together industry leaders, successful entrepreneurs, and innovators for insightful panel discussions, keynote speeches, and interactive sessions.",
     },
     {
       title: "Aarambh",

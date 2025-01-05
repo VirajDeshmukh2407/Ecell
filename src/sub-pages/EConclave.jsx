@@ -1,26 +1,4 @@
-// import React from "react";
-// import Navbar from "../components/Navbar";
-// const EConclavePage = () => {
-//   return (
-//     <div className="bg-black min-h-screen min-w-full">
-//       <Navbar></Navbar><br /><br /><br />
-//       <div className="my-10 p-4">
-//         <h1 className="text-3xl font-bold text-center mb-4 p-4">E-Conclave</h1>
-//         <img
-//           src="/path-to-event-image.jpg"
-//           alt="E-Conclave Event"
-//           className="w-full max-w-lg mx-auto rounded shadow-md mb-6"
-//         />
-//         <p className="text-lg text-gray-700 text-center mb-6">
-//           E-Conclave is our flagship event that brings together industry experts,
-//           entrepreneurs, and students to foster innovation and collaboration.
-//         </p>
-//       </div>
-//     </div>
-//   );
-// };
 
-// export default EConclavePage;
 
 
 import React from "react";
@@ -61,5 +39,4 @@ const EConclavePage = () => {
     </div>
   );
 };
-
 export default EConclavePage;

@@ -35,7 +35,7 @@ export default function About() {
           <img
             src="./images/IIC Ecell_transparent logo.png"
             alt="E-Cell IIC Logo"
-            className="lg:w-200 rounded-lg"
+            className="w-3/4 lg:w-200 rounded-lg"
           />
         </div>
       </div>

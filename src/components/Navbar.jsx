@@ -33,7 +33,7 @@ function Navbar({ className }) {
               <ProductItem
                 title="E-Conclave"
                 src="https://assets.aceternity.com/demos/algochurn.webp"
-                description="Prepare for tech interviews like never before."
+                description="Flagship event featuring industry leaders, entrepreneurs, and insightful discussions."
               />
             </Link>
             <Link to="/econclave">
@@ -41,14 +41,14 @@ function Navbar({ className }) {
                 title="Aarambh"
                 href="https://tailwindmasterkit.com"
                 src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
-                description="Production ready Tailwind css components for your next project"
+                description="Ignite students' entrepreneurial journey through ideation, innovation, and collaboration."
               />
             </Link>
             <ProductItem
               title="Startup Sutra"
               href="https://gomoonbeam.com"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
-              description="Never write from scratch again. Go from idea to blog in minutes."
+              description="An event blending fun, competition, and education for entrepreneurs."
             />
             {/* <ProductItem
               title="Rogue"
