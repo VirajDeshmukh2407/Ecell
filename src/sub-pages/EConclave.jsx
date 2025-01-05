@@ -1,5 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import ParallaxScroll from "../components/ui/parallax-scroll";
+
 const EConclavePage = () => {
   return (
     <div className="p-4 bg-black min-h-screen min-w-full">
@@ -15,6 +17,7 @@ const EConclavePage = () => {
         entrepreneurs, and students to foster innovation and collaboration.
       </p>
       <div className="grid grid-cols-2 gap-4">
+        <ParallaxScroll>
         <img
           src="/path-to-gallery-image1.jpg"
           alt="Gallery 1"
@@ -35,6 +38,7 @@ const EConclavePage = () => {
           alt="Gallery 4"
           className="rounded shadow-md"
         />
+        </ParallaxScroll>
       </div>
     </div>
   );
