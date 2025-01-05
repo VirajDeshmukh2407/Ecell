@@ -22,13 +22,13 @@ const ContactUs = () => {
                 <div className="flex flex-col md:flex-row justify-between items-center p-16 space-y-8 md:space-y-0">
                     {/* Email */}
                     <div className="p-4 text-center md:text-left">
-                        <h2 className="text-2xl font-semibold text-yellow-400">Email</h2>
+                        <h2 className="text-3xl font-semibold text-yellow-400">Email</h2>
                         <p className="text-lg mt-2">
                             <a
-                                href="mailto:contact@entrepreneurshiphub.com"
-                                className="hover:text-yellow-300"
+                                href="mailto:ecellskncoe.mail@gmail.com"
+                                className="text-xl hover:text-yellow-300"
                             >
-                                contact@entrepreneurshiphub.com
+                                ecellskncoe.mail@gmail.com
                             </a>
                         </p>
                     </div>

@@ -32,45 +32,43 @@ export default function AboutEcell() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
             {/* Card 1 */}
             <CardSpotlight>
-              <h2 className="text-xl font-semibold mb-4">Networking</h2>
+              <h2 className="text-xl font-semibold mb-4">VISION</h2>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-                saepe iure libero, atque quod ipsa impedit rem doloremque facere
-                recusandae nemo officia illo, esse nostrum eligendi earum
-                voluptatem odio blanditiis!
+              To build a strong entrepreneurial ecosystem at SKNCOE by nurturing innovation, 
+              empowering entrepreneurs, and fostering creativity, collaboration, and problem-solving, 
+              with the vision of producing future-ready leaders who drive positive societal impact.
               </p>
             </CardSpotlight>
 
             {/* Card 2 */}
             <CardSpotlight>
-              <h2 className="text-xl font-semibold mb-4">Networking</h2>
+              <h2 className="text-xl font-semibold mb-4">MISSION</h2>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-                saepe iure libero, atque quod ipsa impedit rem doloremque facere
-                recusandae nemo officia illo, esse nostrum eligendi earum
-                voluptatem odio blanditiis!
+              To inspire and educate students, empower innovators, promote inclusivity, support startups, 
+              and foster growth through workshops, mentorship, partnerships, and resources, creating an 
+              entrepreneurial ecosystem that nurtures diverse ideas and drives innovation at SKNCOE.
               </p>
             </CardSpotlight>
 
             {/* Card 3 */}
             <CardSpotlight>
-              <h2 className="text-xl font-semibold mb-4">Entrepreneur Mindset</h2>
+              <h2 className="text-xl font-semibold mb-4">Purpose</h2>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-                saepe iure libero, atque quod ipsa impedit rem doloremque facere
-                recusandae nemo officia illo, esse nostrum eligendi earum
-                voluptatem odio blanditiis!
+              The Ecell club at SKNCOE fosters entrepreneurial growth by educating students, 
+              guiding ideas to execution, building networks, nurturing leadership and innovation, 
+              and promoting socially responsible entrepreneurship to address real-world challenges 
+              and contribute to societal development.
               </p>
             </CardSpotlight>
 
             {/* Card 4 */}
             <CardSpotlight>
-              <h2 className="text-xl font-semibold mb-4">Personal Improvement</h2>
+              <h2 className="text-xl font-semibold mb-4">Promise</h2>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-                saepe iure libero, atque quod ipsa impedit rem doloremque facere
-                recusandae nemo officia illo, esse nostrum eligendi earum
-                voluptatem odio blanditiis!
+              The Ecell club at SKNCOE promises to encourage personal and professional growth, 
+              provide essential resources, foster creativity, offer unwavering support, and drive
+              meaningful change by empowering students to turn entrepreneurial aspirations into impactful 
+              achievements.
               </p>
             </CardSpotlight>
           </div>
