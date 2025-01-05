@@ -1,4 +1,14 @@
-@keyframes spin-border {
+.border-rotation {
+  width: 2000px;
+  height: 200px;
+  top: 50%;
+  left: -40%;
+  transform: rotate(45deg);
+  transform: translate(0, -50%);
+  animation: slow-spin 5s linear infinite;
+  transform-origin: center;
+}
+@keyframes slow-spin {
   0% {
     transform: rotate(0deg);
   }
@@ -7,23 +17,12 @@
   }
 }
 
-.spinning-border-container {
-  position: relative;
-  padding: 2rem; /* Adjust padding for inner content */
-  background: rgba(0, 0, 0, 0.8); /* Background for the content */
-  border-radius: 10px; /* Optional for rounded borders */
-  overflow: hidden;
+.animated-svg path {
+  stroke-dasharray: 500; /* Adjust this to match the length of the path */
+  stroke-dashoffset: 500;
+  transition: stroke-dashoffset 1500ms ease-in-out;
 }
 
-.spinning-border-container::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  border: 3px solid white; /* Pure white border */
-  border-radius: 10px; /* Matches the container's border-radius */
-  animation: spin-border 3s linear infinite; /* Smooth spinning animation */
-  z-index: -1; /* Places the spinning border behind the content */
+.animated-svg.visible path {
+  stroke-dashoffset: 0;
 }

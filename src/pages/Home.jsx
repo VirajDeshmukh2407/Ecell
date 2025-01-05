@@ -11,6 +11,7 @@ import Contact from "./Contact";
 import Alumini from "./Alumini";
 import Footer from "./Footer";
 import AboutEcell from "../sub-pages/About-Ecell";
+import Line1 from "../components/svg/Line1";
 function HomePage() {
   const phrases = ["DREAM.", "DREAM. DISCOVER.", "DREAM. DISCOVER. DISRUPT."];
   const [index, setIndex] = useState(0);
@@ -88,10 +89,11 @@ function HomePage() {
       </div>
       <About></About>
       <AboutEcell></AboutEcell>
+      <div className="bg-black flex items-center justify-center w-full my-7 py-5">
+        <div className="w-1/2"><Line1></Line1></div>
+      </div>
       <Events></Events>
       <Alumini></Alumini>
-      {/* <CoreTeam></CoreTeam>
-      <Faculty></Faculty> */}
       <Contact></Contact>
       <Footer></Footer>
     </div>

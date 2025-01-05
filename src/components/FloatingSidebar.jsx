@@ -12,7 +12,7 @@ const FloatingSidebar = () => {
         <FaInstagram className="social-icon" />
       </a>
       <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-      <FaTwitter className="social-icon" />
+        <FaTwitter className="social-icon" />
       </a>
     </div>
   );

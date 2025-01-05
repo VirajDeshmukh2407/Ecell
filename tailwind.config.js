@@ -22,12 +22,14 @@
 //   }
 // }
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
     extend: {
       animation: {
         shimmer: "shimmer 2s linear infinite",
+        "spin-slow": "spin 5s linear infinite",
       },
       keyframes: {
         shimmer: {

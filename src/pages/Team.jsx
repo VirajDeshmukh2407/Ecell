@@ -1,10 +1,20 @@
-import React from "react";
+
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import teamData from "../team.json";
 import CardDemo from "../sub-pages/Team-Card";
 import Faculty from "./Faculty";
 import Navbar from "../components/Navbar";
 
 const CoreTeam = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+      once: false,
+    });
+  }, []);
+
   return (
     <div>
       <Navbar></Navbar>
@@ -16,14 +26,15 @@ const CoreTeam = () => {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {teamData.map((member, index) => (
-              <CardDemo
-                key={index}
-                name={member.name}
-                position={member.position}
-                image={member.image}
-                email={member.email}
-                linkedin={member.linkedin}
-              />
+              <div key={index} data-aos="fade-in">
+                <CardDemo
+                  name={member.name}
+                  position={member.position}
+                  image={member.image}
+                  email={member.email}
+                  linkedin={member.linkedin}
+                />
+              </div>
             ))}
           </div>
         </div>
