@@ -36,7 +36,7 @@ function Navbar({ className }) {
                 description="Prepare for tech interviews like never before."
               />
             </Link>
-            <Link to="/econclave">
+            <Link to="/aarambh">
               <ProductItem
                 title="Aarambh"
                 href="https://tailwindmasterkit.com"
@@ -44,12 +44,14 @@ function Navbar({ className }) {
                 description="Production ready Tailwind css components for your next project"
               />
             </Link>
-            <ProductItem
-              title="Startup Sutra"
-              href="https://gomoonbeam.com"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
-              description="Never write from scratch again. Go from idea to blog in minutes."
-            />
+            <Link to="/startupsutra">
+              <ProductItem
+                title="Startup Sutra"
+                href="https://gomoonbeam.com"
+                src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
+                description="Never write from scratch again. Go from idea to blog in minutes."
+              />
+            </Link>
             {/* <ProductItem
               title="Rogue"
               href="https://userogue.com"
