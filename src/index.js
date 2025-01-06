@@ -14,6 +14,8 @@ import EConclavePage from "./sub-pages/EConclave";
 import About from "./pages/About";
 import CoreTeam from "./pages/Team";
 import ContactUs from "./pages/ContactUs";
+import AarambhPage from "./sub-pages/Aarambh";
+import StartupSutra from "./sub-pages/StartupSutra";
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -22,6 +24,14 @@ const appRouter = createBrowserRouter([
   {
     path: "/econclave",
     element: <EConclavePage />,
+  },
+  {
+    path: "/aarambh",
+    element: <AarambhPage />,
+  },
+  {
+    path: "/startupsutra",
+    element: <StartupSutra />,
   },
   {
     path: "/team",
