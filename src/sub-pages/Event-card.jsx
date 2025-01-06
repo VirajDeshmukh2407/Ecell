@@ -1,10 +1,11 @@
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "../components/ui/3d-card";
+import { Link } from "react-router-dom";
 
 
-export function ThreeDCardDemo({event}) {
-    
-    const { title, description } = event;
+export function ThreeDCardDemo({ event }) {
+
+  const { title, description, link } = event;
 
   return (
     <CardContainer className="inter-var">
@@ -47,14 +48,16 @@ export function ThreeDCardDemo({event}) {
           >
             Learn More →
           </CardItem> */}
-          <CardItem
-            translateZ={20}
-            translateX={40}
-            as="button"
-            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold hover:bg-[#D97706] transition-colors duration-300"
-          >
-            See More
-          </CardItem>
+          <Link to={event.link}>
+            <CardItem
+              translateZ={20}
+              translateX={40}
+              as="button"
+              className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold hover:bg-[#D97706] transition-colors duration-300"
+            >
+              See More
+            </CardItem>
+          </Link>
         </div>
       </CardBody>
     </CardContainer>
