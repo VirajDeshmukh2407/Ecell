@@ -1,26 +1,32 @@
 [
     {
       "name": "Dr. Punam Raskar",
-      "department": "Coordinator",
-      "image": "https://example.com/images/ajinkya.jpg",
-      "email": "yashbaheti23@gmail.com"
+      "department": "IIC Vice President",
+      "image": "./faculty/Raskar.jpeg",
+      "email": "Psraskar@sinhgad.edu"
     },
     {
       "name": "Dr. Poonam Railkar",
       "department": "Computer",
-      "image": "https://example.com/images/ajinkya.jpg",
-      "email": "yashbaheti23@gmail.com"
+      "image": "./faculty/Railkar.jpeg",
+      "email": "pnrailkar@sinhgad.edu"
     },
     {
       "name": "Prof. Saraswati Nagtilak",
       "department": "Information Technology",
-      "image": "https://example.com/images/ajinkya.jpg",
-      "email": "yashbaheti23@gmail.com"
+      "image": "./faculty/Nagtilak.jpeg",
+      "email": "sanagtilak@sinhgad.edu"
+    },
+    {
+      "name": "Prof. Ruchi Dave",
+      "department": "Electronics and Telecommunication",
+      "image": "./faculty/Dave.jpeg",
+      "email": "ruchi.dave_skncoe@sinhgad.edu"
     },
     {
       "name": "Dr. Sanket Charkha",
       "department": "Management",
-      "image": "https://example.com/images/ajinkya.jpg",
+      "image": "./faculty/Charkha.jpeg",
       "email": "yashbaheti23@gmail.com"
     }
 ]
