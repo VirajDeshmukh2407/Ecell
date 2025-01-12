@@ -1,0 +1,66 @@
+[
+    {
+        "name": "True Elements",
+        "image": "./images/Sponsors/i1.jpg"
+    },
+    {
+        "name": "HackersEra",
+        "image": "./images/Sponsors/i2.jpg"
+    },
+    {
+        "name": "Stockgro",
+        "image": "./images/Sponsors/i3.jpg"
+    },
+    {
+        "name": "TaxiWars",
+        "image": "./images/Sponsors/i4.jpg"
+    },
+    {
+        "name": "Big Bunn Storyy",
+        "image": "./images/Sponsors/i5.jpg"
+    },
+    {
+        "name": "YAMAHA Ayush Motors",
+        "image": "./images/Sponsors/i6.jpg"
+    },
+    {
+        "name": "Phoenix Infotech",
+        "image": "./images/Sponsors/i7.jpg"
+    },
+    {
+        "name": "CyberKing Capitals",
+        "image": "./images/Sponsors/i8.jpg"
+    },
+    {
+        "name": "Harbhole",
+        "image": "./images/Sponsors/i9.jpg"
+    },
+    {
+        "name": "KD's Blackwood Cafe",
+        "image": "./images/Sponsors/i10.jpg"
+    },
+    {
+        "name": "Paradox Entertainment",
+        "image": "./images/Sponsors/i11.jpg"
+    },
+    {
+        "name": "Brahma Pure Veg",
+        "image": "./images/Sponsors/i12.jpg"
+    },
+    {
+        "name": "Bisleri",
+        "image": "./images/Sponsors/i13.jpg"
+    },
+    {
+        "name": "Glint Logic",
+        "image": "./images/Sponsors/i14.jpg"
+    },
+    {
+        "name": "Bee Armour",
+        "image": "./images/Sponsors/i15.jpg"
+    },
+    {
+        "name": "Uber Eats",
+        "image": "./images/Sponsors/i16.jpg"
+    }
+]
