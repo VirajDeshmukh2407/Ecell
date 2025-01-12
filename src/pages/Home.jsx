@@ -15,7 +15,6 @@ import Line1 from "../components/svg/Line1";
 function HomePage() {
   const phrases = ["DREAM.", "DREAM. DISCOVER.", "DREAM. DISCOVER. DISRUPT."];
   const [index, setIndex] = useState(0);
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -35,32 +34,6 @@ function HomePage() {
         <div className="hidden md:block">
           <Navbar />
         </div>
-
-        {/* Sidebar icon for small screens */}
-        <div className="absolute top-4 left-4 md:hidden z-30">
-          <FaBars
-            className="text-white text-2xl cursor-pointer"
-            onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-          />
-        </div>
-
-        {/* Sidebar content for small screens */}
-        {isSidebarOpen && (
-          <div className="absolute top-0 left-0 w-3/4 h-full bg-gray-800 bg-opacity-90 p-6 z-40">
-            <button
-              className="text-white mb-4"
-              onClick={() => setIsSidebarOpen(false)}
-            >
-              Close
-            </button>
-            <div className="text-white space-y-4">
-              <p>Menu Item 1</p>
-              <p>Menu Item 2</p>
-              <p>Menu Item 3</p>
-            </div>
-          </div>
-        )}
-
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-black opacity-40 z-10"></div>
 

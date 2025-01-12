@@ -1,8 +1,6 @@
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "../components/ui/3d-card";
 import { Link } from "react-router-dom";
-
-
 export function ThreeDCardDemo({ event }) {
 
   const { title, description, link } = event;

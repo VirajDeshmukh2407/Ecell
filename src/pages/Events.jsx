@@ -1,6 +1,5 @@
 import React from "react";
 import { ThreeDCardDemo } from "../sub-pages/Event-card";
-import { Link } from "react-router-dom";
 // import EConclavePage from "../sub-pages/EConclave";
 
 const Events = () => {
