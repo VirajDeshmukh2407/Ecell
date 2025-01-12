@@ -32,45 +32,33 @@ export default function AboutEcell() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
             {/* Card 1 */}
             <CardSpotlight>
-              <h2 className="text-xl font-semibold mb-4">Networking</h2>
+              <h2 className="text-xl font-semibold mb-4">Vision</h2>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-                saepe iure libero, atque quod ipsa impedit rem doloremque facere
-                recusandae nemo officia illo, esse nostrum eligendi earum
-                voluptatem odio blanditiis!
+              To create a dynamic entrepreneurial ecosystem at SKNCOE that nurtures innovation, empowers aspiring entrepreneurs, and fosters creativity, collaboration, and problem-solving, producing leaders who drive significant societal and economic transformations.
               </p>
             </CardSpotlight>
 
             {/* Card 2 */}
             <CardSpotlight>
-              <h2 className="text-xl font-semibold mb-4">Networking</h2>
+              <h2 className="text-xl font-semibold mb-4">Mission</h2>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-                saepe iure libero, atque quod ipsa impedit rem doloremque facere
-                recusandae nemo officia illo, esse nostrum eligendi earum
-                voluptatem odio blanditiis!
+              To inspire, educate, and empower students in entrepreneurship through workshops, mentorship, and partnerships, promoting inclusivity and supporting student-led startups with resources, guidance, and exposure for sustainable growth and impactful innovation.
               </p>
             </CardSpotlight>
 
             {/* Card 3 */}
             <CardSpotlight>
-              <h2 className="text-xl font-semibold mb-4">Entrepreneur Mindset</h2>
+              <h2 className="text-xl font-semibold mb-4">Purpose</h2>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-                saepe iure libero, atque quod ipsa impedit rem doloremque facere
-                recusandae nemo officia illo, esse nostrum eligendi earum
-                voluptatem odio blanditiis!
+              To act as a catalyst for entrepreneurial growth at SKNCOE, bridging the gap between ideation and execution, fostering leadership and innovation, and connecting students with networks to address real-world challenges through socially responsible entrepreneurship.
               </p>
             </CardSpotlight>
 
             {/* Card 4 */}
             <CardSpotlight>
-              <h2 className="text-xl font-semibold mb-4">Personal Improvement</h2>
+              <h2 className="text-xl font-semibold mb-4">Promise</h2>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-                saepe iure libero, atque quod ipsa impedit rem doloremque facere
-                recusandae nemo officia illo, esse nostrum eligendi earum
-                voluptatem odio blanditiis!
+              To provide an environment for personal and professional growth, offering resources, mentorship, and support, fostering creativity, and driving meaningful change by empowering students on their entrepreneurial journeys from ideas to impactful realities.
               </p>
             </CardSpotlight>
           </div>
