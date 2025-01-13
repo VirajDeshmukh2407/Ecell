@@ -9,18 +9,23 @@ const Events = () => {
       description:
         "Flagship event that brings together industry leaders, successful entrepreneurs, and innovators for insightful panel discussions, keynote speeches, and interactive sessions.",
       link: "/econclave",
+      thumnail: './thumbnail/Thumbnail1.jpg'
     },
     {
       title: "Aarambh",
       description:
         "A dedicated event to ignite the entrepreneurial journey of students by providing a platform to ideate, innovate, and collaborate.",
       link: "/aarambh",
+      thumnail: './thumbnail/Thumbnail3.jpg'
+
     },
     {
       title: "Startup Sutra",
       description:
         "An interactive event that combines fun, competition, and education, offering a unique entrepreneurial experience.",
       link: "/startupsutra",
+      thumnail: './thumbnail/Thumbnail2.jpg'
+
     },
   ];
 

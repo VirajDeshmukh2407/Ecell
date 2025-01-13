@@ -1,5 +1,23 @@
 [
     {
+      "name": "Prof. Arvind Deshpande",
+      "department": "IIC Conveyer",
+      "image": "./faculty/deshpande.jpg",
+      "email": "principal.skncoe@sinhgad.edu"
+    },
+    {
+      "name": "Prof. Kishor Borole",
+      "department": "Vice Principal",
+      "image": "./faculty/borole.jpg",
+      "email": "krborole@sinhgad.edu"
+    },
+    {
+      "name": "Prof. Ravindra Borhade",
+      "department": "Hod",
+      "image": "./faculty/borhade.jpg",
+      "email": "hodcomp.skncoe@sinhgad.edu"
+    },
+    {
       "name": "Dr. Punam Raskar",
       "department": "IIC Vice President",
       "image": "./faculty/Raskar.jpeg",

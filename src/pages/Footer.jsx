@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4">
         {/* Title and Motto */}
         <div className="text-center mb-6">
-          <h1 className="text-3xl font-bold mb-2">Ecell SKNCOE</h1>
+          <h1 className="text-3xl font-bold mb-2">IIC ECELL SKNCOE</h1>
           <p className="text-lg italic">Dream. Discover. Disrupt.</p>
         </div>
 
@@ -41,7 +41,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="text-center border-t border-gray-700 pt-4">
-          <p>&copy; {new Date().getFullYear()} Ecell SKNCOE. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} IIC ECELL SKNCOE. All rights reserved.</p>
         </div>
       </div>
     </footer>

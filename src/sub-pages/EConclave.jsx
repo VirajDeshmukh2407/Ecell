@@ -28,7 +28,7 @@ const EConclavePage = () => {
         </h1>
         <div className="flex flex-col items-center">
           <img
-            src="/images/Startup-Sutra/i3.jpg"
+            src="./thumbnail/Thumbnail1.jpg"
             alt="Startup-Sutra-Image"
             className="w-1/2 lg:w-1/4 object-cover max-w-2xl mx-auto rounded-lg shadow-lg mb-8"
           />
