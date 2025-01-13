@@ -14,7 +14,7 @@ const Footer = () => {
         {/* Social Media Links */}
         <div className="flex justify-center space-x-6 mb-6">
           <a
-            href="https://twitter.com"
+            href=" https://x.com/EcellSkncoe50?t=6d2JFJjTlkzzqfqPFYYHhQ&s=08"
             target="_blank"
             rel="noopener noreferrer"
             className="text-yellow-500 hover:text-yellow-400 text-2xl"
@@ -22,7 +22,7 @@ const Footer = () => {
             <FaTwitter />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/iic_ecellskncoe?igsh=MTJzMDAzdHVucXJhbQ=="
             target="_blank"
             rel="noopener noreferrer"
             className="text-yellow-500 hover:text-yellow-400 text-2xl"
@@ -30,7 +30,7 @@ const Footer = () => {
             <FaInstagram />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/company/iic-ecell-skncoe-official/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-yellow-500 hover:text-yellow-400 text-2xl"
