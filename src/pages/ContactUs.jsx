@@ -39,7 +39,7 @@ const ContactUs = () => {
                         <div className="flex justify-center items-center space-x-6 mt-4">
                             {/* Instagram */}
                             <a
-                                href="https://www.instagram.com/entrepreneurshiphub"
+                                href="https://www.instagram.com/iic_ecellskncoe?igsh=MTJzMDAzdHVucXJhbQ=="
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-white hover:text-yellow-300 text-3xl"
@@ -49,7 +49,7 @@ const ContactUs = () => {
 
                             {/* LinkedIn */}
                             <a
-                                href="https://www.linkedin.com/in/entrepreneurshiphub"
+                                href="https://www.linkedin.com/company/iic-ecell-skncoe-official/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-white hover:text-yellow-300 text-3xl"
@@ -59,7 +59,7 @@ const ContactUs = () => {
 
                             {/* Twitter */}
                             <a
-                                href="https://www.twitter.com/entrepreneurshiphub"
+                                href=" https://x.com/EcellSkncoe50?t=6d2JFJjTlkzzqfqPFYYHhQ&s=08"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-white hover:text-yellow-300 text-3xl"

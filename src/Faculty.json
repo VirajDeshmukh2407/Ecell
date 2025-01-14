@@ -1,7 +1,7 @@
 [
     {
       "name": "Prof. Arvind Deshpande",
-      "department": "IIC Conveyer",
+      "department": "IIC Convenor",
       "image": "./faculty/deshpande.jpg",
       "email": "principal.skncoe@sinhgad.edu"
     },
@@ -13,7 +13,7 @@
     },
     {
       "name": "Prof. Ravindra Borhade",
-      "department": "Hod",
+      "department": "Head of Department",
       "image": "./faculty/borhade.jpg",
       "email": "hodcomp.skncoe@sinhgad.edu"
     },
