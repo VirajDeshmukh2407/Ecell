@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ThreeDCardDemo } from "../sub-pages/Event-card";
 // import EConclavePage from "../sub-pages/EConclave";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Events = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2500,
+      once: false,
+    });
+  }, []);
+
   const eventsData = [
     {
       title: "E-Conclave",
@@ -44,6 +52,7 @@ const Events = () => {
               ? "md:col-span-2 lg:col-span-2 place-self-center"
               : ""
               }`}
+            data-aos="fade-up"
           >
             <ThreeDCardDemo event={event} />
           </div>

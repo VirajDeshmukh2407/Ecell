@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BackgroundBeams } from "../components/BackgroundBeams.jsx";
 import CardSpotlight from "../components/Card-Spotlight";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function About() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: false,
+      mirror: true,
+    });
+  }, []);
+
   return (
     <div className="h-screen w-full rounded-md bg-black relative flex flex-col items-center justify-center antialiased">
-      <div className="relative overflow-hidden p-12 flex flex-col lg:flex-row items-center lg:items-start lg:justify-between">
+      <div className="relative overflow-hidden p-12 flex flex-col lg:flex-row items-center lg:items-start lg:justify-between" data-aos="fade-right">
         <div
           className="relative z-10 lg:w-1/2 text-center lg:text-left"
           id="about"

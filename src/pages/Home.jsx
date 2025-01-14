@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
-import { FaBars } from "react-icons/fa";
+import { HashLoader } from "react-spinners";
 import ScrollButton from "../components/ScrollButton";
 import FloatingSidebar from "../components/FloatingSidebar";
 import About from "../pages/About";
@@ -11,66 +11,99 @@ import Contact from "./Contact";
 import Alumini from "./Alumini";
 import Footer from "./Footer";
 import AboutEcell from "../sub-pages/About-Ecell";
-import Sponsers from "../pages/Sponsers.jsx"
+import Sponsers from "../pages/Sponsers.jsx";
 import Line1 from "../components/svg/Line1";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function HomePage() {
-  const phrases = ["DREAM.", "DREAM. DISCOVER.", "DREAM. DISCOVER. DISRUPT."];
+  // State to handle loading spinner and text phrases
+  const [loading, setLoading] = useState(true);
   const [index, setIndex] = useState(0);
+  const phrases = ["DREAM.", "DREAM. DISCOVER.", "DREAM. DISCOVER. DISRUPT."];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 2500,
+      once: false,
+    });
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000); // Adjust time as needed
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Cycle through phrases
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % phrases.length);
-    }, 700);
-
-    return () => clearInterval(interval); // Clear interval on component unmount
-  }, []);
+    }, 700); // Adjust duration as needed
+    return () => clearInterval(interval);
+  }, [phrases.length]);
 
   return (
     <div>
-      <div
-        className="relative flex flex-col h-screen bg-cover bg-center"
-        style={{ backgroundImage: `url(${"images/bg.jpg"})` }}
-      >
-        {/* Navbar for medium and larger screens */}
-        <div className="hidden md:block">
-          <Navbar />
+      {/* Display loading spinner or main content */}
+      {loading ? (
+        <div className="flex items-center justify-center h-screen bg-black">
+          <HashLoader color="#facc15" size={80} />
         </div>
-        {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-black opacity-40 z-10"></div>
+      ) : (
+        <>
+          {/* Main Content */}
+          <div
+            className="relative flex flex-col h-screen bg-cover bg-center"
+            style={{ backgroundImage: `url("images/bg.jpg")` }}
+          >
+            {/* Navbar */}
+            <div className="hidden md:block">
+              <Navbar />
+            </div>
 
-        {/* Content Container */}
-        <div className="flex flex-col flex-grow items-center text-center px-4 py-8 z-20 mt-12">
-          <h1 className="text-gray-300 text-[21px] sm:text-[25px] font-normal transition-opacity duration-1000 ease-in-out mt-10 poppins-semibold">
-            {phrases[index]}
-          </h1>
-          <div className="font-extrabold text-gray-300 text-[34px] sm:text-[55px] leading-[normal] mt-16 sm:mt-4 poppins-bold">
-            IIC
-          </div>
-          <span className="text-[34px] sm:text-[40px] font-extrabold text-gray-300 mt-6 poppins-bold">
-            {" "}
-            &amp;
-          </span>
-          <div className="font-extrabold text-gray-300 text-[31px] sm:text-[50px] leading-[normal] mt-4 z-30 poppins-bold">
-            Entrepreneurship Cell
-          </div>
-          <div className="text-gray-300 font-extrabold text-[34px] sm:text-[50px] leading-[normal] mt-10 z-30 poppins-bold">
-            SKNCOE
-          </div>
-        </div>
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black opacity-40 z-10"></div>
 
-        <FloatingSidebar />
-        <ScrollButton />
-      </div>
-      <About></About>
-      <AboutEcell></AboutEcell>
-      <div className="bg-black flex items-center justify-center w-full my-7 py-5">
-        <div className="w-1/2"><Line1></Line1></div>
-      </div>
-      <Events></Events>
-      <Alumini></Alumini>
-      <Sponsers></Sponsers>
-      <Contact></Contact>
-      <Footer></Footer>
+            {/* Hero Section */}
+            <div className="flex flex-col flex-grow items-center text-center px-4 py-8 z-20 mt-12" data-aos="fade-down">
+              <h1 className="text-gray-300 text-[21px] sm:text-[25px] font-normal transition-opacity duration-1000 ease-in-out mt-10 poppins-semibold">
+                {phrases[index]}
+              </h1>
+              <div className="font-extrabold text-gray-300 text-[34px] sm:text-[55px] leading-[normal] mt-16 sm:mt-4 poppins-bold">
+                IIC
+              </div>
+              <span className="text-[34px] sm:text-[40px] font-extrabold text-gray-300 mt-6 poppins-bold">
+                &amp;
+              </span>
+              <div className="font-extrabold text-gray-300 text-[31px] sm:text-[50px] leading-[normal] mt-4 z-30 poppins-bold">
+                Entrepreneurship Cell
+              </div>
+              <div className="text-gray-300 font-extrabold text-[34px] sm:text-[50px] leading-[normal] mt-10 z-30 poppins-bold">
+                SKNCOE
+              </div>
+            </div>
+
+            {/* Sidebar and Scroll Button */}
+            <FloatingSidebar />
+            <ScrollButton />
+          </div>
+
+          {/* Sections */}
+          <About />
+          <AboutEcell />
+          <div className="bg-black flex items-center justify-center w-full my-7 py-5">
+            <div className="w-1/2">
+              <Line1 />
+            </div>
+          </div>
+          <Events />
+          <Alumini />
+          <Sponsers />
+          <Contact />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }

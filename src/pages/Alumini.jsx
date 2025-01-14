@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CardSpotlight from "../components/Card-Spotlight";
 import AK from "../assets/Adesh_Kolhe.png";
 import VK from "../assets/VK_SIR.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Alumini = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2500,
+      once: false,
+    });
+  }, []);
+
   return (
     <div className="bg-black text-white py-11 px-11">
       <h3 className="text-center text-4xl font-bold mb-8">
@@ -15,6 +23,7 @@ const Alumini = () => {
         <span className="text-yellow-500">Startup</span>
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        {/* <div data-aos="fade-up"> */}
         {/* Card 1 */}
         <CardSpotlight className="rounded-lg h-auto p-6 flex justify-between items-center">
           <div className="flex flex-col justify-between">
@@ -29,29 +38,29 @@ const Alumini = () => {
               </h1>
             </div>
             <div className="mt-4">
-    <p>
-        Adesh Kolhe is a visionary entrepreneur and the co-founder of {" "}
-        <span className="text-yellow-500">BoomPanda</span>, India's coolest student community. 
-    </p>
-    <br />
-    <h2 className="text-xl font-bold">Journey with Ecell SKNCOE:</h2>
-    <ul>
-        <li>
-            <strong>2018:</strong> Adesh joined Ecell SKNCOE as an enthusiastic member, eager to 
-            contribute to its mission of promoting entrepreneurship among students.
-        </li>
-        <li>
-            <strong>2019:</strong> His exceptional leadership and communication skills earned him the 
-            role of Public Relations Head. During this time, Adesh was instrumental in building strong 
-            relationships, organizing impactful events, and significantly boosting Ecell SKNCOE's 
-            visibility on and off-campus.
-        </li>
-    </ul>
-    <br />
-    <p>BoomPanda was founded in 2020 by Adesh Kolhe and Rudra Ghodke. As of November 2024, BoomPanda has not 
-      raised any external funding and operates as a <strong>bootstrapped</strong> company.
-    </p>
-</div>
+              <p>
+                Adesh Kolhe is a visionary entrepreneur and the co-founder of {" "}
+                <span className="text-yellow-500">BoomPanda</span>, India's coolest student community.
+              </p>
+              <br />
+              <h2 className="text-xl font-bold">Journey with Ecell SKNCOE:</h2>
+              <ul>
+                <li>
+                  <strong>2018:</strong> Adesh joined Ecell SKNCOE as an enthusiastic member, eager to
+                  contribute to its mission of promoting entrepreneurship among students.
+                </li>
+                <li>
+                  <strong>2019:</strong> His exceptional leadership and communication skills earned him the
+                  role of Public Relations Head. During this time, Adesh was instrumental in building strong
+                  relationships, organizing impactful events, and significantly boosting Ecell SKNCOE's
+                  visibility on and off-campus.
+                </li>
+              </ul>
+              <br />
+              <p>BoomPanda was founded in 2020 by Adesh Kolhe and Rudra Ghodke. As of November 2024, BoomPanda has not
+                raised any external funding and operates as a <strong>bootstrapped</strong> company.
+              </p>
+            </div>
           </div>
           <div className="flex items-start space-x-4 mt-3">
             <a
@@ -72,7 +81,8 @@ const Alumini = () => {
             </a>
           </div>
         </CardSpotlight>
-
+        {/* </div> */}
+        {/* <div data-aos="fade-up"> */}
         {/* Card 2 */}
         <CardSpotlight className="rounded-lg h-auto p-6 flex justify-between items-center">
           <div className="flex flex-col justify-between">
@@ -85,21 +95,21 @@ const Alumini = () => {
               <h1 className="text-xl font-semibold">Vikash Chaudhary</h1>
             </div>
             <div className="mt-4">
-    <p>
-        Vikash Chaudhary is the Founder and CEO of <span className="text-yellow-500">HackersEra</span>, a pioneering cybersecurity service provider established in 2015.
-    </p>
-    <br />
-    <h2 className="text-xl font-bold">Courses Developed by Vikash:</h2>
-    <ul>
-        <li>"Offensive Approach to Hunt Bugs"</li>
-        <li>"Offensive Bug Bounty – Hunter 2.0"</li>
-        <li>"SDR Exploitation"</li>
-    </ul>
-    <br />
-    <p>
-        Beyond entrepreneurship, Vikash is dedicated to cybersecurity awareness, helping individuals and organizations safeguard against digital threats. As of November 2024, HackersEra remains a <strong>bootstrapped</strong> company, reporting an annual revenue of <strong>₹2.29 crore (~$286,000)</strong> for the fiscal year ending March 31, 2023.
-    </p>
-</div>
+              <p>
+                Vikash Chaudhary is the Founder and CEO of <span className="text-yellow-500">HackersEra</span>, a pioneering cybersecurity service provider established in 2015.
+              </p>
+              <br />
+              <h2 className="text-xl font-bold">Courses Developed by Vikash:</h2>
+              <ul>
+                <li>"Offensive Approach to Hunt Bugs"</li>
+                <li>"Offensive Bug Bounty – Hunter 2.0"</li>
+                <li>"SDR Exploitation"</li>
+              </ul>
+              <br />
+              <p>
+                Beyond entrepreneurship, Vikash is dedicated to cybersecurity awareness, helping individuals and organizations safeguard against digital threats. As of November 2024, HackersEra remains a <strong>bootstrapped</strong> company, reporting an annual revenue of <strong>₹2.29 crore (~$286,000)</strong> for the fiscal year ending March 31, 2023.
+              </p>
+            </div>
 
           </div>
           <div className="flex items-center space-x-4 mt-3">
@@ -121,6 +131,7 @@ const Alumini = () => {
             </a>
           </div>
         </CardSpotlight>
+        {/* </div> */}
       </div>
     </div>
   );

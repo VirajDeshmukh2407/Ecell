@@ -1,14 +1,24 @@
 import Navbar from "../components/Navbar";
-import React from "react";
+import React, { useEffect } from "react";
 import CardSpotlight from "../components/Card-Spotlight";
 import "../css/style.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function AboutEcell() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: false,
+      mirror: true,
+    });
+  }, []);
+
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
       {/* <LineBg /> */}
       <div className="flex-grow bg-black antialiased">
-        <div className="container mx-auto p-6 text-gray-300">
+        <div className="container mx-auto p-6 text-gray-300" data-aos="fade-right">
           <div className="mt-11 spinning-border-container">
             <h2 className="text-2xl lg:text-4xl font-bold mb-6 text-center">
               What is IIC ECELL SKNCOE?
@@ -34,7 +44,7 @@ export default function AboutEcell() {
             <CardSpotlight>
               <h2 className="text-xl font-semibold mb-4">Vision</h2>
               <p>
-              To create a dynamic entrepreneurial ecosystem at SKNCOE that nurtures innovation, empowers aspiring entrepreneurs, and fosters creativity, collaboration, and problem-solving, producing leaders who drive significant societal and economic transformations.
+                To create a dynamic entrepreneurial ecosystem at SKNCOE that nurtures innovation, empowers aspiring entrepreneurs, and fosters creativity, collaboration, and problem-solving, producing leaders who drive significant societal and economic transformations.
               </p>
             </CardSpotlight>
 
@@ -42,7 +52,7 @@ export default function AboutEcell() {
             <CardSpotlight>
               <h2 className="text-xl font-semibold mb-4">Mission</h2>
               <p>
-              To inspire, educate, and empower students in entrepreneurship through workshops, mentorship, and partnerships, promoting inclusivity and supporting student-led startups with resources, guidance, and exposure for sustainable growth and impactful innovation.
+                To inspire, educate, and empower students in entrepreneurship through workshops, mentorship, and partnerships, promoting inclusivity and supporting student-led startups with resources, guidance, and exposure for sustainable growth and impactful innovation.
               </p>
             </CardSpotlight>
 
@@ -50,7 +60,7 @@ export default function AboutEcell() {
             <CardSpotlight>
               <h2 className="text-xl font-semibold mb-4">Purpose</h2>
               <p>
-              To act as a catalyst for entrepreneurial growth at SKNCOE, bridging the gap between ideation and execution, fostering leadership and innovation, and connecting students with networks to address real-world challenges through socially responsible entrepreneurship.
+                To act as a catalyst for entrepreneurial growth at SKNCOE, bridging the gap between ideation and execution, fostering leadership and innovation, and connecting students with networks to address real-world challenges through socially responsible entrepreneurship.
               </p>
             </CardSpotlight>
 
@@ -58,7 +68,7 @@ export default function AboutEcell() {
             <CardSpotlight>
               <h2 className="text-xl font-semibold mb-4">Promise</h2>
               <p>
-              To provide an environment for personal and professional growth, offering resources, mentorship, and support, fostering creativity, and driving meaningful change by empowering students on their entrepreneurial journeys from ideas to impactful realities.
+                To provide an environment for personal and professional growth, offering resources, mentorship, and support, fostering creativity, and driving meaningful change by empowering students on their entrepreneurial journeys from ideas to impactful realities.
               </p>
             </CardSpotlight>
           </div>
