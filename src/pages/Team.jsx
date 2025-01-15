@@ -74,9 +74,9 @@ const CoreTeam = () => {
           <h2 className="text-4xl font-bold text-center text-white mb-12">
             Meet The <span className="text-yellow-400">Core Team</span>
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 place-items-center">
             {teamData.map((member, index) => (
-              <div key={index} data-aos="fade-in">
+              <div key={index} data-aos="fade-in flex justify-center items-center">
                 <CardDemo
                   name={member.name}
                   position={member.position}

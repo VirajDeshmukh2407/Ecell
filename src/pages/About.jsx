@@ -23,7 +23,7 @@ export default function About() {
           <h1 className="text-3xl lg:text-4xl font-bold mb-6 text-glow text-gray-300">
             Who Are We?
           </h1>
-          <p className="text-lg mb-6 text-white sm:text-balance poppins-regular">
+          <p className="text-lg mb-6 text-white text-justify poppins-regular">
             IIC ECELL is a non-profit organization run by the students of SKNCOE
             Pune. We are dedicated to fostering a culture of entrepreneurship
             and innovation on campus. Our mission is to empower aspiring

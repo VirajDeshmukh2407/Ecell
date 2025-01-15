@@ -85,7 +85,7 @@ function HomePage() {
             </div>
 
             {/* Sidebar and Scroll Button */}
-            <FloatingSidebar />
+            <FloatingSidebar className="fixed top-20 left-5 sm:hidden" />
             <ScrollButton />
           </div>
 

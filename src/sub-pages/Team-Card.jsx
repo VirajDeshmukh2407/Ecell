@@ -3,9 +3,9 @@ import { FaEnvelope, FaLinkedin } from "react-icons/fa";
 
 const CardDemo = ({ name, position, image, email, linkedin }) => {
   return (
-    <div className="max-w-[250px] w-full h-[380px] group/card overflow-hidden relative bg-black rounded-md shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="w-[250px] h-[350px] group/card overflow-hidden relative bg-black rounded-md shadow-lg hover:shadow-xl transition-shadow duration-300">
       <div
-        className="cursor-pointer h-[80%] rounded-md flex flex-col justify-between p-4 bg-cover bg-center opacity-90"
+        className="h-full w-full cursor-pointer rounded-md flex flex-col justify-between p-4 bg-cover bg-center opacity-90"
         style={{
           backgroundImage: `url(${image})`,
         }}

@@ -17,7 +17,7 @@ export const MenuItem = ({ setActive, active, item, children, className }) => {
     <div onMouseEnter={() => setActive(item)} className="relative">
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-black hover:text-yellow-500 dark:text-white" // Added hover:text-yellow-500 here
+        className="cursor-pointer text-white hover:text-yellow-500" // Added hover:text-yellow-500 here
       >
         {item}
       </motion.p>
@@ -33,7 +33,7 @@ export const MenuItem = ({ setActive, active, item, children, className }) => {
                 transition={transition}
                 // layoutId ensures smooth animation
                 layoutId="active"
-                className="bg-white dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
+                className="bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
               >
                 <motion.div
                   // layout ensures smooth animation
@@ -56,7 +56,7 @@ export const Menu = ({ setActive, children }) => {
     <nav
       // resets the state
       onMouseLeave={() => setActive(null)}
-      className="relative rounded-full border border-transparent dark:bg-transparent dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-4 px-8 py-6"
+      className="relative rounded-full border bg-transparent border-white/[0.2]  shadow-input flex justify-center space-x-4 px-8 py-6"
     >
       {children}
     </nav>
@@ -74,10 +74,10 @@ export const ProductItem = ({ title, description, href, src }) => {
         className="flex-shrink-0 rounded-md shadow-2xl"
       />
       <div>
-        <h4 className="text-xl font-bold mb-1 text-black dark:text-gray-300">
+        <h4 className="text-xl font-bold mb-1 text-white ">
           {title}
         </h4>
-        <p className="text-neutral-700 text-sm max-w-[10rem] dark:text-neutral-300">
+        <p className="text-neutral-700 text-sm max-w-[10rem]">
           {description}
         </p>
       </div>
