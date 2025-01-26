@@ -15,10 +15,16 @@ import CoreTeam from "./pages/Team";
 import ContactUs from "./pages/ContactUs";
 import AarambhPage from "./sub-pages/Aarambh";
 import StartupSutra from "./sub-pages/StartupSutra";
+import Econclave2025 from "./econclave2k25/Econclave2025";
+
 const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <HomePage />,
+  },
+  {
+    path: "/Econclave2025",
+    element: <Econclave2025 />,
   },
   {
     path: "/econclave",

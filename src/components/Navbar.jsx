@@ -34,8 +34,8 @@ function Navbar({ className }) {
             About
           </a>
 
-          <Link to="/upcomingEvents">
-            <MenuItem setActive={setActive} item="Upcoming Events" className="hover:text-yellow-600" />
+          <Link to="/Econclave2025">
+            <MenuItem setActive={setActive} item="E-Conclave2k25" className="hover:text-yellow-600" />
           </Link>
 
           <MenuItem setActive={setActive} active={active} item="Events">
@@ -103,11 +103,11 @@ function Navbar({ className }) {
               About
             </a>
             <Link
-              to="/upcomingEvents"
+              to="/Econclave2025"
               className="block px-4 py-2 hover:bg-gray-700 rounded-lg"
               onClick={toggleMobileMenu}
             >
-              Upcoming Events
+              E-Conclave2k25
             </Link>
             <div>
               <button
