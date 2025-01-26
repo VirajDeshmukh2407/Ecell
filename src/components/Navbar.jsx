@@ -33,6 +33,11 @@ function Navbar({ className }) {
           <a href="#about" className="text-white hover:text-yellow-600">
             About
           </a>
+
+          <Link to="/upcomingEvents">
+            <MenuItem setActive={setActive} item="Upcoming Events" className="hover:text-yellow-600" />
+          </Link>
+
           <MenuItem setActive={setActive} active={active} item="Events">
             <div className="text-sm grid grid-cols-2 gap-10 p-4">
               <Link to="/econclave">
@@ -97,6 +102,13 @@ function Navbar({ className }) {
             >
               About
             </a>
+            <Link
+              to="/upcomingEvents"
+              className="block px-4 py-2 hover:bg-gray-700 rounded-lg"
+              onClick={toggleMobileMenu}
+            >
+              Upcoming Events
+            </Link>
             <div>
               <button
                 className="w-full text-left px-4 py-2 hover:bg-gray-700"
