@@ -15,9 +15,7 @@ import CoreTeam from "./pages/Team";
 import ContactUs from "./pages/ContactUs";
 import AarambhPage from "./sub-pages/Aarambh";
 import StartupSutra from "./sub-pages/StartupSutra";
-// import Econclave2025 from "./econclave2k25/Econclave2025";
-
-import Econclave2025 from "./pages/econclave2k25/Econclave2025";
+import Econclave2025 from "./econclave2k25/Econclave2025";
 
 const appRouter = createBrowserRouter([
   {
@@ -25,7 +23,7 @@ const appRouter = createBrowserRouter([
     element: <HomePage />,
   },
   {
-    path: "/Econclave2025",
+    path: "/econclave2k25",
     element: <Econclave2025 />,
   },
   {
@@ -47,6 +45,18 @@ const appRouter = createBrowserRouter([
   {
     path: "/contacts",
     element: <ContactUs />,
+  },
+  {
+    path: "/econclave2k25/day1",
+    element: <Day1 />,
+  },
+  {
+    path: "/econclave2k25/showdown",
+    element: <Showdown />,
+  },
+  {
+    path: "/econclave2k25/day2",
+    element: <Day2 />,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
