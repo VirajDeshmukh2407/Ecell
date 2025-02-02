@@ -3,12 +3,18 @@ import { HoveredLink, Menu, MenuItem, ProductItem } from "./navbar-menu";
 import { cn } from "../lib/utils";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 function Navbar({ className }) {
   const [active, setActive] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isEventsOpen, setIsEventsOpen] = useState(false);
 
+  const naviagte = useNavigate();
+
+  const handlePath = () => {
+    naviagte("/econclave2k25");
+  }
 
   const toggleEvents = () => {
     setIsEventsOpen(!isEventsOpen);
@@ -34,9 +40,16 @@ function Navbar({ className }) {
             About
           </a>
 
-          <Link to="/Econclave2025">
+          <div onClick={handlePath}>
             <MenuItem setActive={setActive} item="E-Conclave2k25" className="hover:text-yellow-600" />
-          </Link>
+          </div>
+
+          {/* <Link
+            to="/econclave2k25"
+            className="hover:text-yellow-600"
+          >
+            E-Conclave2k25
+          </Link> */}
 
           <MenuItem setActive={setActive} active={active} item="Events">
             <div className="text-sm grid grid-cols-2 gap-10 p-4">
@@ -103,7 +116,7 @@ function Navbar({ className }) {
               About
             </a>
             <Link
-              to="/Econclave2025"
+              to="/econclave2k25"
               className="block px-4 py-2 hover:bg-gray-700 rounded-lg"
               onClick={toggleMobileMenu}
             >

@@ -645,7 +645,7 @@ const Events = () => {
   ];
 
   useEffect(() => {
-    AOS.init({ duration: 1500, once: false });
+    AOS.init({ duration: 500, once: false });
   }, []);
 
   return (
@@ -679,9 +679,9 @@ const Events = () => {
             exit={{ opacity: 0 }}
             onClick={handleOutsideClick}
           >
-            <div className="fixed inset-0 bg-black bg-opacity-75 backdrop-blur-sm" />
-            <div className="relative w-full max-w-lg sm:max-w-xl md:max-w-2xl">
-              <div className="relative">
+            <div className="fixed inset-0 bg-black bg-opacity-75 backdrop-blur-sm " />
+            <div className="relative w-full">
+              <div className="relative w-full">
                 <motion.div
                   className="w-full max-h-[80vh]"
                   initial={{ scale: 0.9, opacity: 0 }}
@@ -689,11 +689,11 @@ const Events = () => {
                   exit={{ scale: 0.9, opacity: 0 }}
                   transition={{ type: "spring", damping: 20 }}
                 >
-                  <div className="rounded-2xl ">
+                  <div className="rounded-2xl border border-white">
                     {getEventComponent(selectedEvent)}
                   </div>                </motion.div>
                 <button
-                  className="absolute top-2 right-10 w-12 h-10 flex items-center justify-center rounded-full text-white z-50"
+                  className="absolute top-2 right-2 w-12 h-10 flex items-center justify-center rounded-full text-white z-50"
                   onClick={closeModal}
                 >
                   <span className="sr-only">Close</span>

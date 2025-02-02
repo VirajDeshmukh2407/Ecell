@@ -15,7 +15,12 @@ import CoreTeam from "./pages/Team";
 import ContactUs from "./pages/ContactUs";
 import AarambhPage from "./sub-pages/Aarambh";
 import StartupSutra from "./sub-pages/StartupSutra";
-import Econclave2025 from "./econclave2k25/Econclave2025";
+
+import Econclave2025 from "./pages/econclave2k25/Econclave2025";
+
+import Day1 from "./pages/econclave2k25/Day1";
+import Day2 from "./pages/econclave2k25/Day2";
+import Showdown from "./pages/econclave2k25/Showdown";
 
 const appRouter = createBrowserRouter([
   {
